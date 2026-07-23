@@ -12,8 +12,7 @@ let package = Package(
             targets: ["REVUPMediaMaxAdapterChartBoostTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
-        .package(url: "https://github.com/revup-tnk/REVUP-iOS-ChartBoost.git", exact: "1.0.0"),
+        .package(url: "https://github.com/revup-tnk/REVUP-iOS-ChartBoost.git", exact: "1.1.0"),
     ],
     targets: [
         .target(
@@ -21,20 +20,19 @@ let package = Package(
             dependencies: [
                 .target(name: "REVUPMediaMaxAdapterChartBoost"),
                 .target(name: "REVUPMediaMaxAdapterChartboostMediationAdapter"),
-                .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
                 .product(name: "REVUPWithChartBoost", package: "REVUP-iOS-ChartBoost"),
             ],
             path: "Sources"
         ),
         .binaryTarget(
             name: "REVUPMediaMaxAdapterChartBoost",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPMediaMaxAdapterChartBoost.zip",
-            checksum: "b70eb8eaa2cd38343ec7381526cab3b4904afe594c6d58beb298c04d2f3df522"
+            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/REVUPMediaMaxAdapterChartBoost.zip",
+            checksum: "098ae2fc6ca3a3e1bf8402ac08951da9d5daf854c6da1f0a12f53199c3c2cebe"
         ),
         .binaryTarget(
             name: "REVUPMediaMaxAdapterChartboostMediationAdapter",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/AppLovinMediationChartboostAdapter.xcframework.zip",
-            checksum: "48687bf6b115740380811a9bf9aa7e0e9fc6049fbc22660fda80813c13491d91"
+            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/AppLovinMediationChartboostAdapter.xcframework.zip",
+            checksum: "7c6c0a63ecc185069922b7b681f59b5d514b2e789518082f384fc23151b7fa91"
         ),
     ]
 )

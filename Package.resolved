@@ -1,21 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "applovin-max-swift-package",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
-      "state" : {
-        "revision" : "b5acf713209298059bb2f09b22d84d523454bc7b",
-        "version" : "13.5.1"
-      }
-    },
-    {
       "identity" : "revup-ios-chartboost",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/revup-tnk/REVUP-iOS-ChartBoost.git",
       "state" : {
-        "revision" : "67ebd2513a9b14eb3228ac12e3276f8bd1b45461",
-        "version" : "1.0.0"
+        "revision" : "632e1f0b959e0ebeccdd77433cb73ac8692c906d",
+        "version" : "1.1.0"
       }
     }
   ],
